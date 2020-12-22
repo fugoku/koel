@@ -4,9 +4,9 @@ namespace App\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class iTunes extends Facade
+class ITunes extends Facade
 {
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'iTunes';
     }
