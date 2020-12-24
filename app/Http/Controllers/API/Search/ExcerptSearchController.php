@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API\Search;
 use App\Http\Controllers\API\Controller;
 use App\Services\SearchService;
 use Illuminate\Http\Request;
+use InvalidArgumentException;
 
 class ExcerptSearchController extends Controller
 {
@@ -18,7 +19,7 @@ class ExcerptSearchController extends Controller
     public function index(Request $request)
     {
         if (!$request->get('q')) {
-            return ['results' => []];
+            throw new InvalidArgumentException('A search query is required.');
         }
 
         return [
