@@ -3,11 +3,11 @@ import { expect, it } from 'vitest'
 import factory from '@/__tests__/factory'
 import UnitTestCase from '@/__tests__/UnitTestCase'
 import { albumStore, commonStore, songStore } from '@/stores'
-import CloseModalBtn from '@/components/ui/BtnCloseModal.vue'
-import AlbumScreen from './AlbumScreen.vue'
 import { downloadService } from '@/services'
 import router from '@/router'
 import { eventBus } from '@/utils'
+import CloseModalBtn from '@/components/ui/BtnCloseModal.vue'
+import AlbumScreen from './AlbumScreen.vue'
 
 let album: Album
 
