@@ -23,6 +23,19 @@ class AlbumTest extends TestCase
         'data' => [
             '*' => self::JSON_STRUCTURE,
         ],
+        'links' => [
+            'first',
+            'last',
+            'prev',
+            'next',
+        ],
+        'meta' => [
+            'current_page',
+            'from',
+            'path',
+            'per_page',
+            'to',
+        ],
     ];
 
     public function testIndex(): void
