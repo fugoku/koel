@@ -2,7 +2,6 @@
 node_modules
 Homestead.yaml
 Homestead.json
-.env
 .idea
 /_ide_helper.php
 /config.testing
@@ -91,3 +90,7 @@ docs/.vitepress/dist
 docs/.vitepress/cache
 
 demo-credits.json
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
